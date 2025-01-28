@@ -1,0 +1,333 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header h1 {
+    /* font-family: "Poppins", sans-serif; */
+    margin-bottom: 3rem;
+    color: white;
+    text-align: center;
+    margin-top: 20rem;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.header {
+    background-color: black;
+    background-image: url("Assets/back.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60rem;
+}
+
+.nav-plus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+ul {
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+ul li a{
+    text-align: center;
+}
+
+nav ul li ul.dropdown li{
+    display: block;
+    margin: 0;
+    padding-top: 10px;
+}
+nav ul li ul.dropdown{
+    width: auto;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    height: 100px;
+    z-index: 999;
+    display: none;
+    transition: all 0.5s;
+}
+nav ul li:hover ul.dropdown{
+    display: block;
+}
+
+nav ul a:hover{
+    color: goldenrod;
+}
+
+nav ul a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; 
+    background-color: goldenrod; 
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; 
+}
+
+nav ul a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav ul li.current a::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+nav ul a.current::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#menu-toggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 25px;
+    border-radius: 20px;
+    background: #ffffff;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+nav ul {
+    display: flex;
+}
+
+header{
+    background-image: url(../../Assets/beyondmainpage.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+.service-header{
+    background-color: rgba(0, 0, 0, 0.414);
+    height: 100%;
+    text-align: center;
+}
+
+.service-header h1{
+    color: white;
+    padding-top: 10%;
+    font-size: 70px;
+}
+
+.kitchen-container{
+    display: flex;
+    flex-direction: row;
+}
+.img{
+    background-image: url(../../Assets/box2.jpg);
+    background-size: cover;
+}
+.kitchen-text{
+    background-color: white;
+}
+.kitchen-item{
+    flex: 1;
+    height: 500px;
+}
+
+.kitchen-gallery{
+    background-color: rgb(29, 29, 29);
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kitchen-gallery-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+    height: 450px;
+}
+.kitchen-gallery-container img{
+    width: 400px;
+}
+.kitchen-gallery button{
+    margin: 20px;
+    background-color: goldenrod;
+    cursor: pointer;
+    border: none;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    transition: all 0.5s;
+}
+
+.kitchen-gallery button:hover{
+    background-color: rgb(255, 255, 255);
+    color: goldenrod; 
+}
+
+.quote{
+    background-image: url(../../Assets/quote.jpg);
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* margin-top: 3rem; */
+}
+.quote .dream-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.quote h1{
+    color: goldenrod;
+    margin: 80px;
+}
+.quote .dream-kitchen{
+    flex: 1;
+    color: white;
+    font-size: 50px;
+}
+.quote button{
+    background-color: goldenrod;
+    cursor: pointer;
+    border: none;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    /* border-radius: 2rem; */
+    color: rgb(255, 255, 255);
+    transition: background-color 0.8s ease, transform 0.5s ease;
+}
+.quote button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+}
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    background-color: rgb(32, 32, 32);
+    padding-top: 4%;
+}
+
+.hover-footer{
+    transition: all 0.3s;
+}
+
+.hover-footer:hover{
+    color: goldenrod;
+}
+.business h1{
+    color: goldenrod;
+}
+
+.business p{
+    color: white;
+    line-height: 30px;
+}
+
+.contact h1{
+    color: goldenrod;
+}
+
+.contact p{
+    color: white;
+    line-height: 30px;
+}
+
+.explore h1{
+    color: goldenrod;
+}
+
+.explore p{
+    color: white;
+    line-height: 30px;
+}
+
+.estimate h1{
+    color: goldenrod;
+}
+.estimate p{
+    color: white;
+    line-height: 30px;
+}
+#emailInput{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(51, 51, 51);
+    border: none;
+    height: 40px;
+    width: 280px;
+    color: white;
+    border: 1px solid transparent;
+}
+
+#emailInput:hover{ 
+    border-color: goldenrod;
+}
+
+.copyright{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+.life{
+    color: goldenrod;
+}
+.line{
+    border-bottom: 1px solid rgb(97, 97, 97);
+}
+
+@media screen and (max-width: 600px){
+
+}
+@media (min-width: 601px) and (max-width: 899px){
+
+}
+@media (min-width: 900px) and (max-width: 1199px){
+
+}
+@media (min-width: 1200px) and (max-width: 1600px){
+    
+}
